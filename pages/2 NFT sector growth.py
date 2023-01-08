@@ -62,6 +62,7 @@ count(distinct purchaser ) as minters,
   sum(minters) over (order by date) as total_minters
 --count(distinct y.purchaser) as purchasers
 from solana.core.fact_nft_mints --x, solana.core.fact_nft_sales y where trunc(x.block_timestamp,'day')=trunc(y.block_timestamp,'day')
+where date>=current_date-INTERVAL '1 MONTH'
 group by 1
 order by 1
   ),
@@ -75,6 +76,7 @@ count(distinct tx_id) as sales,
 count(distinct purchaser) as purchasers,
   sum(purchasers) over (order by date) as total_purchasers
 from solana.core.fact_nft_sales --y where trunc(x.block_timestamp,'day')=trunc(y.block_timestamp,'day')
+where date>=current_date-INTERVAL '1 MONTH'
 group by 1
 order by 1
 ),
@@ -126,6 +128,7 @@ count(distinct purchaser ) as minters,
   sum(minters) over (order by date) as total_minters
 --count(distinct y.purchaser) as purchasers
 from solana.core.fact_nft_mints --x, solana.core.fact_nft_sales y where trunc(x.block_timestamp,'day')=trunc(y.block_timestamp,'day')
+where date>=current_date-INTERVAL '1 MONTH'
 group by 1
 order by 1
   ),
@@ -139,6 +142,7 @@ count(distinct tx_id) as sales,
 count(distinct purchaser) as purchasers,
   sum(purchasers) over (order by date) as total_purchasers
 from solana.core.fact_nft_sales --y where trunc(x.block_timestamp,'day')=trunc(y.block_timestamp,'day')
+where date>=current_date-INTERVAL '1 MONTH'
 group by 1
 order by 1
 ),
@@ -190,6 +194,7 @@ count(distinct purchaser ) as minters,
   sum(minters) over (order by date) as total_minters
 --count(distinct y.purchaser) as purchasers
 from solana.core.fact_nft_mints --x, solana.core.fact_nft_sales y where trunc(x.block_timestamp,'day')=trunc(y.block_timestamp,'day')
+where date>=current_date-INTERVAL '2 MONTHS'
 group by 1
 order by 1
   ),
@@ -203,6 +208,7 @@ count(distinct tx_id) as sales,
 count(distinct purchaser) as purchasers,
   sum(purchasers) over (order by date) as total_purchasers
 from solana.core.fact_nft_sales --y where trunc(x.block_timestamp,'day')=trunc(y.block_timestamp,'day')
+where date>=current_date-INTERVAL '2 MONTHS'
 group by 1
 order by 1
 ),
