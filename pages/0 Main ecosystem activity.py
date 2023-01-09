@@ -26,17 +26,16 @@ st.title('Main ecosystem activity')
 # In[20]:
 
 
-st.markdown('This part shows the basic NFT trends on **Solana** ecosystem. It is intended to provide an overview of the current market for NFTs in Solana.')
+st.markdown('This part shows the basic activity trends on **Solana** ecosystem. It is intended to provide an overview of the current activity on Solana.')
 
 
 # In[5]:
 
 
-st.markdown('In this section, we are gonna track the basic metrics registered on **NFT Solana Ecosystem** so far such as:') 
-st.write('- NFT sales executed')
-st.write('- NFT sales volume in SOL')
-st.write('- Active NFT purchasers')
-st.write('- Average NFT price')
+st.markdown('In this section, we are gonna track the basic activity metrics registered on **Solana Ecosystem** so far such as:') 
+st.write('- Evolution of transactions, transactors and transactions per user')
+st.write('- Evolution of NFT sales, buyers and buys per user')
+st.write('- Average user activity')
 st.write('')
 
 
