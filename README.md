@@ -2,6 +2,12 @@
 
 Here you will find the following information about Solana NFT Ecosystem:
 
+0. ### General Solana ecosystem activity
+- Transactions, users transacting, transactions per user
+- Swaps, users swapping, swaps per user
+- NFT sales, users buying NFTs, NFT bought per user
+- DeFi transactions, DeFi users transacting, DeFi actions per user
+
 1. ### General NFT Trends
 - NFT sales executed
 - NFT sales volume in SOL
