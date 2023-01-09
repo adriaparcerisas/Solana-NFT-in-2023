@@ -47,6 +47,7 @@ st.markdown("To display all the information properly and make the app more reada
 
 
 st.markdown("These includes:") 
+st.markdown("0. Main activity")
 st.markdown("1. **_General NFT trends_**")
 st.markdown("2. **_NFT sector growth_**")
 st.markdown("3. **_Marketplaces competition_**")
