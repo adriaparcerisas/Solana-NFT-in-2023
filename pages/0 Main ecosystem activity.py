@@ -950,17 +950,17 @@ fig1.update_yaxes(title_text="Total user activity", secondary_y=True)
 fig2 = make_subplots(specs=[[{"secondary_y": True}]])
 
 fig2.add_trace(go.Bar(x=df2['date'],
-                y=df['avg_tx_per_user'],
+                y=df2['avg_tx_per_user'],
                 name='# of transactions',
                 marker_color='rgb(163, 203, 249)'
                 , yaxis='y'))
 fig2.add_trace(go.Line(x=df2['date'],
-                y=df['avg_swaps_per_swapper'],
+                y=df2['avg_swaps_per_swapper'],
                 name='# of swaps',
                 marker_color='rgb(11, 78, 154)'
                 , yaxis='y'))
 fig2.add_trace(go.Line(x=df2['date'],
-                y=df['nft_bought_per_user'],
+                y=df2['nft_bought_per_user'],
                 name='# of nfts',
                 marker_color='rgb(11, 78, 154)'
                 , yaxis='y2'))
@@ -987,17 +987,17 @@ fig2.update_yaxes(title_text="Total user activity", secondary_y=True)
 fig3 = make_subplots(specs=[[{"secondary_y": True}]])
 
 fig3.add_trace(go.Bar(x=df3['date'],
-                y=df['avg_tx_per_user'],
+                y=df3['avg_tx_per_user'],
                 name='# of transactions',
                 marker_color='rgb(163, 203, 249)'
                 , yaxis='y'))
 fig3.add_trace(go.Line(x=df3['date'],
-                y=df['avg_swaps_per_swapper'],
+                y=df3['avg_swaps_per_swapper'],
                 name='# of swaps',
                 marker_color='rgb(11, 78, 154)'
                 , yaxis='y'))
 fig3.add_trace(go.Line(x=df3['date'],
-                y=df['nft_bought_per_user'],
+                y=df3['nft_bought_per_user'],
                 name='# of nfts',
                 marker_color='rgb(11, 78, 154)'
                 , yaxis='y2'))
